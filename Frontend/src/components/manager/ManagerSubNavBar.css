@@ -1,0 +1,32 @@
+.manager-sub-navbar {
+  width: 100vw;
+  background: linear-gradient(90deg, #ffb74d 0%, #ff9800 100%);
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.12);
+  position: relative;
+  z-index: 99;
+}
+.manager-sub-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.manager-sub-navbar li {
+  font-size: 1.1rem;
+}
+.manager-sub-navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.manager-sub-navbar a:hover {
+  background: #ff9800;
+  color: #fff;
+}

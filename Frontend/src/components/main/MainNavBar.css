@@ -1,0 +1,107 @@
+.site-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px #ff9800, 0 1px 0 #ff5722;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+.navbarh {
+  width: 100vw;
+  min-width: 100vw;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+  padding: 0.5rem 32px;
+  color: #fff;
+  height: 70px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  z-index: 100;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 152, 0, 0.3);
+  border: 2px solid #fff3e0;
+  background: #fff3e0;
+}
+
+.nav-linksh {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+}
+
+.nav-linksh .dropdown {
+  position: relative;
+}
+
+.nav-linksh .dropdown button {
+  background: linear-gradient(90deg, #ffb74d 0%, #ff9800 100%);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(255, 152, 0, 0.15);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.nav-linksh .dropdown button:hover {
+  background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+  box-shadow: 0 2px 8px rgba(255, 87, 34, 0.18);
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: linear-gradient(90deg, #fff3e0 0%, #ffe0b2 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(255, 152, 0, 0.18);
+  min-width: 170px;
+  z-index: 10;
+  padding: 0.5rem 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #ff9800;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background: #ff9800;
+  color: #fff;
+}
